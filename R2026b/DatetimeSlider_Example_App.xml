@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='ExamplewithDatetimeSliderUIFigure'>
+        <HandleVisibility>'on'</HandleVisibility>
+        <Name>'Example with Datetime Slider'</Name>
+        <Position>[100 100 1537 804]</Position>
+        <Children>
+            <UIAxes name='UIAxes'>
+                <ContextMenu>ContextMenu</ContextMenu>
+                <Position>[1 139 1527 667]</Position>
+                <Title>
+                    <String>'Title'</String>
+                </Title>
+                <XLabel>
+                    <String>'X'</String>
+                </XLabel>
+                <YLabel>
+                    <String>'Y'</String>
+                </YLabel>
+                <ZLabel>
+                    <String>'Z'</String>
+                </ZLabel>
+            </UIAxes>
+            <DatetimeSlider name='DatetimeSlider'>
+                <Limits>[datetime([2025 4 11]) datetime([2025 5 11])]</Limits>
+                <LimitsChangedFcn>'DatetimeSliderValueChanged'</LimitsChangedFcn>
+                <Position>[1 1 1537 130]</Position>
+                <Value>datetime([2025 4 11])</Value>
+                <ValueChangedFcn>'DatetimeSliderValueChanged'</ValueChangedFcn>
+            </DatetimeSlider>
+            <ContextMenu name='ContextMenu'>
+                <Children>
+                    <Menu name='MMMddMenu'>
+                        <MenuSelectedFcn>MMMddMenuSelected</MenuSelectedFcn>
+                        <Text>'MMMdd'</Text>
+                    </Menu>
+                    <Menu name='MMMdduuuuMenu'>
+                        <MenuSelectedFcn>MMMdduuuuMenuSelected</MenuSelectedFcn>
+                        <Text>'MMMdduuuu'</Text>
+                    </Menu>
+                </Children>
+            </ContextMenu>
+        </Children>
+    </UIFigure>
+    <RunConfiguration>
+        <StartupFcn>startupFcn</StartupFcn>
+    </RunConfiguration>
+    <AppDetails>
+        <Name>Example with Datetime Slider</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>0834696f-213a-44c0-8be4-34892915b5ef</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'>data:image/jpg;base64,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</Thumbnail>
+</MATLABApp>
